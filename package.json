@@ -1,5 +1,5 @@
 {
-  "name": "jsonata-moment",
+  "name": "@elastic.io/jsonata-moment",
   "version": "1.0.0",
   "description": "Moment support for JSONata",
   "main": "jsonata-moment.js",
