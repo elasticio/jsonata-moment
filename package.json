@@ -2,7 +2,7 @@
   "name": "@elastic.io/jsonata-moment",
   "version": "1.0.0",
   "description": "Moment support for JSONata",
-  "main": "jsonata-moment.js",
+  "main": "dist/jsonata-moment.js",
   "scripts": {
     "test": "npm run build && mocha spec --recursive",
     "prepublishOnly": "npm test",
