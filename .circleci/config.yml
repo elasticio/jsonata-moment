@@ -37,6 +37,9 @@ jobs:
           name: Creating .npmrc with authToken
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
+          name: Installing aws client
+          command: pip install awscli --upgrade --user && aws --version
+      - run:
           name: Publishing to npm
           command: npm publish
       - deploy:
