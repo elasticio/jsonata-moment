@@ -37,27 +37,8 @@ jobs:
           name: Creating .npmrc with authToken
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
-          name: Checking python
-          command: python --version
-      - run:
-          name: Installing aws client
-          command: |
-            curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
-            unzip awscli-bundle.zip
-            ./awscli-bundle/install -b ~/bin/aws
-            whereis aws
-      - run:
           name: Publishing to npm
           command: npm publish
-      - deploy:
-          name: Deploy to CDN if branch is master
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              aws s3 sync dist s3://elasticio-cdn-eu/vendor/jsonata-moment/`npm view @elastic.io/jsonata-moment version`/
-            else
-              echo "Not master branch so not deploying"
-            fi
-
 workflows:
   version: 2
   build:
