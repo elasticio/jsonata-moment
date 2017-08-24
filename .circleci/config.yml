@@ -20,7 +20,7 @@ jobs:
           command: npm test
       - run:
           name: Uploading to S3
-          command: aws s3 sync ./dist s3://elasticio-cdn-eu/vendor/jsonata-moment/testing
+          command: aws s3 sync ./dist s3://elasticio-cdn-eu/vendor/jsonata-moment/testing-`npm view @elastic.io/jsonata-moment version`
 
   publish:
     docker:
