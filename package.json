@@ -5,7 +5,7 @@
   "main": "dist/jsonata-moment.js",
   "scripts": {
     "test": "npm run build && mocha spec --recursive",
-    "prepublishOnly": "npm build",
+    "prepublishOnly": "npm run build",
     "build": "npm run clean && mkdir -p dist && npm run build:normal && npm run build:es5",
     "build:normal": "npm run browserify && npm run minify",
     "build:es5": "npm run babel && npm run browserify:es5 && npm run minify:es5",
