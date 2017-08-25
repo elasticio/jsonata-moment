@@ -51,10 +51,9 @@ workflows:
           type: approval
           requires:
             - test
-          filters:
-            branches:
-              only: master
       - publish:
           requires:
             - hold
-
+          filters:
+            branches:
+              only: master
