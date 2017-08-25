@@ -39,8 +39,8 @@ jobs:
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
             npm publish
       - run:
-          name: Uploading to S3
-          command: aws s3 sync ./dist s3://elasticio-cdn-eu/vendor/jsonata-moment/`npm view @elastic.io/jsonata-moment version`
+          name: Uploading to CDN (S3)
+          command: aws s3 sync ./dist s3://elasticio-cdn-eu/vendor/jsonata-moment/`node -pe "require('./package.json').version"`
 
 workflows:
   version: 2
