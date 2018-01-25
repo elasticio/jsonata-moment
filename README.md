@@ -1,4 +1,9 @@
 # jsonata-moment
+
+[![NPM statistics](https://nodei.co/npm/jsonata.png?downloads=true&downloadRank=true)](https://nodei.co/npm/jsonata/)
+
+[![Build Status](https://travis-ci.org/jsonata-js/jsonata.svg)](https://travis-ci.org/jsonata-js/jsonata)
+
 Moment.js support for [JSONata](http://jsonata.org/).
 
 ## How to install
