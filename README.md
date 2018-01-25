@@ -2,7 +2,7 @@
 
 [![NPM statistics](https://nodei.co/npm/@elastic.io/jsonata-moment.png?downloads=true)](https://nodei.co/npm/@elastic.io/jsonata-moment/)
 
-[![Build Status](https://travis-ci.org/jsonata-js/jsonata.svg)](https://travis-ci.org/jsonata-js/jsonata)
+[![Build Status](https://travis-ci.org/elasticio/jsonata-moment.svg)](https://travis-ci.org/elasticio/jsonata-moment)
 
 Moment.js support for [JSONata](http://jsonata.org/).
 
