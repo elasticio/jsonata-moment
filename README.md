@@ -1,6 +1,6 @@
 # jsonata-moment
 
-[![NPM statistics](https://nodei.co/npm/jsonata.png?downloads=true&downloadRank=true)](https://nodei.co/npm/jsonata/)
+[![NPM statistics](https://nodei.co/npm/@elastic.io/jsonata-moment.png?downloads=true)](https://nodei.co/npm/@elastic.io/jsonata-moment/)
 
 [![Build Status](https://travis-ci.org/jsonata-js/jsonata.svg)](https://travis-ci.org/jsonata-js/jsonata)
 
