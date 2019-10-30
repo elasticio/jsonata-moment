@@ -1,6 +1,6 @@
 {
   "name": "@elastic.io/jsonata-moment",
-  "version": "1.1.4",
+  "version": "1.1.5-dev1",
   "description": "Moment support for JSONata",
   "main": "dist/jsonata-moment.js",
   "repository": {
@@ -34,6 +34,6 @@
     "uglify-es": "^3.3.10"
   },
   "dependencies": {
-    "jsonata": "1.7.0"
+    "jsonata": "https://github.com/jsonata-js/jsonata#12a36f08d44616cb24cc2e08d7468e76197a0281"
   }
 }
