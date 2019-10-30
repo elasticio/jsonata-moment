@@ -34,6 +34,6 @@
     "uglify-es": "^3.3.10"
   },
   "dependencies": {
-    "jsonata": "https://github.com/jsonata-js/jsonata#12a36f08d44616cb24cc2e08d7468e76197a0281"
+    "jsonata": "git://github.com/jsonata-js/jsonata#12a36f08d44616cb24cc2e08d7468e76197a0281"
   }
 }
