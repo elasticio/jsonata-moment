@@ -16,6 +16,9 @@ jobs:
           paths:
             - ./node_modules
       - run:
+          name: Auditing
+          command: npm run audit
+      - run:
           name: Testing
           command: npm test
 
@@ -57,3 +60,13 @@ workflows:
       - publish:
           requires:
             - hold
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - test

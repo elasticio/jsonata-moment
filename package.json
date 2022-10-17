@@ -1,6 +1,6 @@
 {
   "name": "@elastic.io/jsonata-moment",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Moment support for JSONata",
   "main": "dist/jsonata-moment.js",
   "repository": {
@@ -8,6 +8,7 @@
     "url": "https://github.com/elasticio/jsonata-moment.git"
   },
   "scripts": {
+    "audit": "better-npm-audit audit --level high --production",
     "test": "npm run build && mocha spec --recursive",
     "prepublishOnly": "npm run build",
     "build": "npm run clean && mkdir -p dist && npm run build:normal && npm run build:es5",
@@ -23,17 +24,18 @@
   "author": "Elastic.io GmbH",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-runtime": "^6.26.0",
-    "browserify": "^16.1.0",
-    "chai": "^4.1.2",
-    "mocha": "^3.5.3",
+    "babel-cli": "6.26.0",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-preset-env": "1.6.1",
+    "babel-runtime": "6.26.0",
+    "browserify": "16.1.0",
+    "chai": "4.1.2",
+    "mocha": "3.5.3",
     "moment": "2.24.0",
-    "uglify-es": "^3.3.10"
+    "uglify-es": "3.3.10",
+    "better-npm-audit": "3.7.3"
   },
   "dependencies": {
-    "jsonata": "1.7.0"
+    "jsonata": "1.8.6"
   }
 }
