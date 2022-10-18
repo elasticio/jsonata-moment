@@ -31,7 +31,7 @@
     "browserify": "16.1.0",
     "chai": "4.1.2",
     "mocha": "3.5.3",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "uglify-es": "3.3.10",
     "better-npm-audit": "3.7.3"
   },
