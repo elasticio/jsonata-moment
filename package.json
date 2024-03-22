@@ -1,6 +1,6 @@
 {
   "name": "@elastic.io/jsonata-moment",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Moment support for JSONata",
   "main": "dist/jsonata-moment.js",
   "repository": {
@@ -36,6 +36,6 @@
     "better-npm-audit": "3.7.3"
   },
   "dependencies": {
-    "jsonata": "1.8.6"
+    "jsonata": "1.8.7"
   }
 }
